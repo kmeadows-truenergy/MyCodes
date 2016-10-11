@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<form id="frm2">
+  First Number: <input type="number" name="fname" value="58"><br>
+ Second Number: <input type="number" name="lname" value="42"><br>
+ </form>
+
+<p>Click to add</p>
+
+<button onclick="AddThems()">Add</button>
+
+<h1 id="sumis"></h1>
+
+<script>
+function AddThems() {
+    var x = document.getElementById("frm2");
+    var Added = ""
+    Num1 = parseInt(x.elements[0].value);
+    Num2 = parseInt(x.elements[1].value);
+    Added = Num1+ Num2
+    document.getElementById("sumis").innerHTML = Added;
+}
+</script>
+
+</body>
+</html>
