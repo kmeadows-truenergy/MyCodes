@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form id="frm2">
+<form id="frm1">
   First Number: <input type="number" name="fname" value="58"><br>
  Second Number: <input type="number" name="lname" value="42"><br>
  </form>
@@ -9,17 +9,44 @@
 <p>Click to add</p>
 
 <button onclick="AddThems()">Add</button>
+<button onclick="SubThem()">Subract</button>
+<button onclick="MultThem()">Multiply</button>
+<button onclick="DivThem()">Divide</button>
 
-<h1 id="sumis"></h1>
+<h1 id="demo"></h1>
 
 <script>
 function AddThems() {
-    var x = document.getElementById("frm2");
+    var x = document.getElementById("frm1");
     var Added = ""
     Num1 = parseInt(x.elements[0].value);
     Num2 = parseInt(x.elements[1].value);
     Added = Num1+ Num2
-    document.getElementById("sumis").innerHTML = Added;
+    document.getElementById("demo").innerHTML = Added;
+}
+function SubThem() {
+    var x = document.getElementById("frm1");
+    var Added = ""
+    Num1 = parseInt(x.elements[0].value);
+    Num2 = parseInt(x.elements[1].value);
+    Added = Num1- Num2
+    document.getElementById("demo").innerHTML = Added;
+}
+function MultThem() {
+    var x = document.getElementById("frm1");
+    var Added = ""
+    Num1 = parseInt(x.elements[0].value);
+    Num2 = parseInt(x.elements[1].value);
+    Added = Num1 * Num2
+    document.getElementById("demo").innerHTML = Added;
+}
+function DivThem() {
+    var x = document.getElementById("frm1");
+    var Added = ""
+    Num1 = parseInt(x.elements[0].value);
+    Num2 = parseInt(x.elements[1].value);
+    Added = Num1 / Num2
+    document.getElementById("demo").innerHTML = Added;
 }
 </script>
 
