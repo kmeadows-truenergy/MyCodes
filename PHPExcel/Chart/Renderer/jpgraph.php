@@ -49,6 +49,7 @@ class PHPExcel_Chart_Renderer_jpgraph
         'star'     => MARK_STAR,
         'dot'      => MARK_FILLEDCIRCLE,
         'dash'     => MARK_DTRIANGLE,
+        'circle'   => MARK_CIRCLE,
         'plus'     => MARK_CROSS
     );
 
